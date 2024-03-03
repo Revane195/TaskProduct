@@ -1,0 +1,114 @@
+.product {
+    padding: 50px;
+    .header{
+        padding: 20px 0;
+        .search{
+            padding:0 10px;
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(218, 218, 218);
+                padding: 5px 0;
+                &::placeholder{
+                    color: rgb(196, 196, 196);
+                }
+                &:focus{
+                    border-bottom-color: #2A7CC7;
+                }
+                
+            }
+        }
+        .filter{
+            text-align: end;
+            select{
+                padding: 5px;
+                cursor: pointer;
+                border: 2px solid rgb(218, 218, 218);
+                outline: none;
+                color: rgb(196, 196, 196);
+                option{
+                    color: gray;
+                    text-transform: capitalize;
+                }
+
+            }
+        }
+    }
+    &-box {
+        margin       : 10px;
+        box-shadow   : 0 0 14px 0px rgb(218, 217, 217);
+        border-radius: 8px;
+        padding: 10px;
+
+        .img {
+            width : 100%;
+            height: 200px;
+
+            img {
+                width     : 100%;
+                height    : 100%;
+                object-fit: contain;
+            }
+        }
+
+        .text {
+            padding-top: 20px;
+            .title {
+                display           : -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow          : hidden;
+                text-overflow     : ellipsis;
+                height: 35px;
+                padding: 0 20px;
+                text-align: center;
+                font-size: 14px;
+
+            }
+            .price{
+                color: #23856D;
+                text-align: center;
+                padding-top: 15px ;
+            }
+        }
+        .more{
+            width: 100%;
+            background-color: #2A7CC7;
+            border: none;
+            margin-top: 10px;
+            border-radius: 3px;
+            a{
+                padding: 10px 0;
+
+                color: white;
+                width: 100%;
+            }
+            transition: all 1s;
+            &:hover{
+                background-color: #266096;
+            }
+        }
+    }
+    .footer{
+       
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        button{
+            padding: 10px;
+            border-radius:3px ;
+            border: none;
+            background-color: #2A7CC7;
+            color: white;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover{
+                background-color: #266096;
+            }
+        }
+        button[disabled] {
+            background-color: gray;
+        }
+    }
+}

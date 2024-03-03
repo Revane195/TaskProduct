@@ -1,0 +1,62 @@
+//----------
+@import "./layout/grid";
+@import "./abstracts/colors";
+// @import "./abstracts/mixins";
+// @import "./abstracts/variables";
+// @import "./layout/navbar";
+// @import "./layout/slider";
+// @import "./layout/filter";
+// @import "./layout/sliderEvent";
+// @import "./layout/loading";
+// @import "./Page/home";
+// @import "./Page/login";
+// @import "./Page/register";
+// @import "./layout/header";
+// @import "./layout/main";
+// @import "./layout/footer";
+// @import "./layout/event";
+
+// @import "./Page/MyCart";
+// @import "./Page/MyTickets";
+@import "./Pages/product";
+@import "./Pages/productDetail";
+
+* {
+  margin         : 0;
+  padding        : 0;
+  box-sizing     : border-box;
+  list-style     : none;
+  text-decoration: none;
+  font-family    : Arial, Helvetica, sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+}
+
+.loading {
+  position                 : absolute;
+  left                     : 50%;
+  top                      : 50%;
+  transform: translate(-50% ,-50%);
+  animation-name           : loading;
+  animation-duration       : 0.2s;
+  animation-iteration-count: infinite;
+  transition: all 0.2s;
+}
+
+@keyframes loading {
+  0% {
+    color: blue;
+  }
+
+
+  100% {
+    color: green;
+  }
+}
