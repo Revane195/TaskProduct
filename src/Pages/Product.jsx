@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Footer from '../Components/Footer';
+import ProductBox from '../Components/ProductBox';
 
 const Product = () => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(10);
+    const [itemsPerPage] = useState(9);
     const [searchTerm, setSearchTerm] = useState('');
     const [categories, setCategories] = useState(['All']);
     const [selectedCategory, setSelectedCategory] = useState('All');
-    const [loading, setLoading] = useState(true); // New state for loading
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
         fetchData();
@@ -94,20 +95,13 @@ const Product = () => {
 
                             :
                             currentItems && currentItems.map((item) => (
-                                <div className='col-4' key={item.id}>
-                                    <div className='product-box'>
-                                        <div className='img'>
-                                            <img src={item.image} alt="img" />
-                                        </div>
-                                        <div className='text'>
-                                            <p className='title'>{item.title}</p>
-                                            <p className='price'>{item.price} $</p>
-                                        </div>
-                                        <button className='more'>
-                                            <Link to={`/product/${item.id}`}>View more</Link>
-                                        </button>
-                                    </div>
-                                </div>
+                                <ProductBox
+                                key={item.id}
+                                id={item.id}
+                                image={item.image}
+                                title={item.title}
+                                price={item.price}
+                            />
                             ))}
                 </div>
 

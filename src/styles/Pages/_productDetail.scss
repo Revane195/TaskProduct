@@ -16,7 +16,7 @@
 
         &-text {
             padding         : 30px;
-            background-color: rgb(245, 244, 244);
+            background-color: $light-gary;
             min-height      : 300px;
 
             &-title {
@@ -31,7 +31,7 @@
                 align-items    : center;
 
                 .star {
-                    color    : #E77C40;
+                    color    : $yellow;
                     font-size: 25px;
                 }
 
@@ -41,7 +41,7 @@
                 }
 
                 .count {
-                    color    : rgb(121, 119, 119);
+                    color    : $gray;
                     font-size: 14px;
                 }
 
@@ -49,16 +49,23 @@
 
             &-price {
                 font-size: 20px;
-                color    : #23856D;
+                color    : $green;
 
             }
 
             &-desc {
-                color      : #858585;
+                color      : $gray;
                 font-family: 12px;
                 padding    : 20px 0;
                 font-weight: 300;
             }
+        }
+    }
+    .similar-products{
+        padding-top: 50px;
+        text-align: center;
+        h2{
+           padding: 30px 0;
         }
     }
 }

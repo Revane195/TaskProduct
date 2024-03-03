@@ -8,13 +8,13 @@
                 width: 100%;
                 border: none;
                 outline: none;
-                border-bottom: 2px solid rgb(218, 218, 218);
+                border-bottom: 2px solid $gray;
                 padding: 5px 0;
                 &::placeholder{
-                    color: rgb(196, 196, 196);
+                    color: $gray;
                 }
                 &:focus{
-                    border-bottom-color: #2A7CC7;
+                    border-bottom-color: $blue;
                 }
                 
             }
@@ -24,11 +24,11 @@
             select{
                 padding: 5px;
                 cursor: pointer;
-                border: 2px solid rgb(218, 218, 218);
+                border: 2px solid $gray;
                 outline: none;
-                color: rgb(196, 196, 196);
+                color: $gray;
                 option{
-                    color: gray;
+                    color: $gray;
                     text-transform: capitalize;
                 }
 
@@ -37,7 +37,7 @@
     }
     &-box {
         margin       : 10px;
-        box-shadow   : 0 0 14px 0px rgb(218, 217, 217);
+        box-shadow   : 0 0 14px 0px $light-gary;
         border-radius: 8px;
         padding: 10px;
 
@@ -67,26 +67,26 @@
 
             }
             .price{
-                color: #23856D;
+                color: $green;
                 text-align: center;
                 padding-top: 15px ;
             }
         }
         .more{
             width: 100%;
-            background-color: #2A7CC7;
+            background-color: $blue;
             border: none;
             margin-top: 10px;
             border-radius: 3px;
             a{
                 padding: 10px 0;
 
-                color: white;
+                color:$light-gary;
                 width: 100%;
             }
             transition: all 1s;
             &:hover{
-                background-color: #266096;
+                background-color: $dark-blue;
             }
         }
     }
@@ -99,16 +99,16 @@
             padding: 10px;
             border-radius:3px ;
             border: none;
-            background-color: #2A7CC7;
-            color: white;
+            background-color: $blue;
+            color: $light-gary;
             cursor: pointer;
             transition: all 1s;
             &:hover{
-                background-color: #266096;
+                background-color: $dark-blue;
             }
         }
         button[disabled] {
-            background-color: gray;
+            background-color:$gray;
         }
     }
 }
