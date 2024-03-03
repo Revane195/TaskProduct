@@ -73,10 +73,10 @@ const ProductDetail = () => {
                 ) : (
                     <div>
                         <div className='item row'>
-                            <div className='col-4 img'>
+                            <div className='col-md-4 col-12 img'>
                                 <img src={`${product?.image}`} alt="" />
                             </div>
-                            <div className='col-8'>
+                            <div className='col-12 col-md-8'>
                                 <div className='item-text'>
                                     <p className='item-text-title'>
                                         {product?.title}
